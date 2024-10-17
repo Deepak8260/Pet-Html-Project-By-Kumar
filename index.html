@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumar Pet Adoption</title>
+  </head>
+  <body bgcolor="yellow">
+    <!--Header Section Starts-->
+    <header>
+      <h1>Pet Adoption Application</h1>
+      <img src="./Dog.jpg" height="200" alt="dog" />
+    </header>
+    <!--Header Section Ends-->
+
+    <!--2nd Section Starts-->
+    <section>
+      <form action="#">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+          /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="9861XXXXXX"
+            required
+          /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Pet Preference</legend>
+
+          <label for="pet">Type of Pet</label>
+          <select name="typeOfPet" id="pet">
+            <option value="Select One" disabled selected>Select One</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Bird">Bird</option>
+            <option value="Other">Other</option>
+          </select>
+          <br /><br />
+
+          <input type="radio" name="age" id="young" />
+          <label for="young">Young</label><br />
+
+          <input type="radio" name="age" id="senior" />
+          <label for="senior">Senior</label><br />
+
+          <input type="radio" name="age" id="adult" />
+          <label for="adult">Adult</label><br /><br />
+
+          <label for="textarea">Why do you want to adopt a pet?</label><br />
+          <textarea name="textarea" id="textarea" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+    <!--2nd Section Ends-->
+    <h2>Watch Cute Puppy Videos</h2>
+    <video src="./3191251-uhd_4096_2160_25fps.mp4" controls  type="video/mp4" height="350" width="350"></video>
+  </body>
+</html>
